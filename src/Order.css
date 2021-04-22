@@ -1,0 +1,25 @@
+.order {
+    padding: 100px;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 15px #111;
+}
+
+.order__id {
+    position: absolute;
+    top: 130px;
+    right: 20px;
+}
+
+.order__total {
+    font-weight: 500;
+    text-align: right;
+}
+
+@media (max-width:750px) {
+    .order {
+        zoom: 0.53;
+    }
+}

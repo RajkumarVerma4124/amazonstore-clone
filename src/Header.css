@@ -1,0 +1,125 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+.app__dropdown {
+    height: 41px;
+    text-align: top !important;
+    /* width: 70px; */
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 1.9px !important;
+}
+
+.MuiSelect-root {
+    font-size: 0px;
+    display: none;
+}
+
+.header__logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 0 20px;
+    margin-top: 18px;
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin:0 30px 0 30px ; */
+}
+
+.header__searchInput {
+    height: 19.2px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size: 1.01rem;
+}
+
+.header__searchIcon {
+    padding: 7px;
+    height: 25.1px !important;
+    background-color: #cd9042;
+}
+
+.header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header__optionBasket:hover {
+    color: #cd9042;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.header__basketCount {
+    margin: 0 10px 0 10px;
+}
+
+.header__basketCount:hover {
+    color: #cd9042;
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__nav>a {
+    text-decoration: none;
+}
+
+.header__optionLineOne {
+    font-size: 10px;
+}
+
+.header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800px;
+}
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.header__option:hover {
+    /* border: 1px solid white; */
+    box-shadow: 0px 0px 2px white;
+}
+
+@media (max-width:750px) {
+    .header {
+        display: flow-root;
+        height: auto;
+        padding-bottom: 6px;
+        zoom: 0.81;
+    }
+    .header__search {
+        margin-left: 5px;
+        margin-right: 5px
+    }
+    .header__nav {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
